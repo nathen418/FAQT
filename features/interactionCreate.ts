@@ -3,7 +3,7 @@ import { Client } from "discord.js";
 // Listen interactionCreate events from the client
 export default (client: Client): void => {
   client.on("interactionCreate", async (interaction) => {
-    console.log("Interaction created!");
+    // console.log("Interaction created!");
   });
 };
 

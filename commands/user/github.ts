@@ -15,12 +15,12 @@ export default {
     // Embed values
     const color = "#0099ff";
     const thumbnail =
-      "https://antaresnetwork.com/resources/FAQT/base-server-icon.png";
+      "https://cdn.discordapp.com/avatars/${client.user?.id}/${client.user?.avatar}.jpeg";
     const title = "Github";
     const description =
       "Click here to go to the FAQT repo: \n https://github.com/nathen418/FAQT";
     const footer = `Delivered in: ${client.ws.ping}ms | FAQT | ${process.env.VERSION}`;
-    const footerIcon = "https://antaresnetwork.com/resources/FAQT/icon.jpg";
+    const footerIcon = "https://cdn.discordapp.com/avatars/${client.user?.id}/${client.user?.avatar}.jpeg";
 
     // Embed construction
     const Embed = new MessageEmbed()

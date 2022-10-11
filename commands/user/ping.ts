@@ -17,7 +17,7 @@ export default {
     const title = "Bot/API Ping";
     const description = `Ping: 🏓 | Latency is: **${client.ws.ping}**ms.`;
     const footer = `Delivered in: ${client.ws.ping}ms | FAQT | ${process.env.VERSION}`;
-    const footerIcon = "https://antaresnetwork.com/resources/FAQT/icon.jpg";
+    const footerIcon = "https://cdn.discordapp.com/avatars/${client.user?.id}/${client.user?.avatar}.jpeg";
 
     const Embed = new MessageEmbed()
       .setColor(color)

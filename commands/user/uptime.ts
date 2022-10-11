@@ -24,7 +24,7 @@ export default {
     const title = "Bot Uptime";
     const description = `I have been online for ${days}d ${hours}h ${minutes}m ${seconds}s`;
     const footer = `Delivered in: ${client.ws.ping}ms | FAQT | ${process.env.VERSION}`;
-    const footerIcon = "https://antaresnetwork.com/resources/FAQT/icon.jpg";
+    const footerIcon = "https://cdn.discordapp.com/avatars/${client.user?.id}/${client.user?.avatar}.jpeg";
 
     // Embed construction
     const Embed = new MessageEmbed()
