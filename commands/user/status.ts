@@ -15,12 +15,12 @@ export default {
     // Embed values
     const color = "#0099ff";
     const thumbnail =
-      "https://antaresnetwork.com/resources/BaseBot/base-server-icon.png";
+      "https://antaresnetwork.com/resources/FAQT/base-server-icon.png";
     const title = "Status Page";
     const description =
       "CLick here to see the bot's status: \nhttps://status.antaresnetwork.com";
-    const footer = `Delivered in: ${client.ws.ping}ms | BaseBot | ${process.env.VERSION}`;
-    const footerIcon = "https://antaresnetwork.com/resources/BaseBot/icon.jpg";
+    const footer = `Delivered in: ${client.ws.ping}ms | FAQT | ${process.env.VERSION}`;
+    const footerIcon = "https://antaresnetwork.com/resources/FAQT/icon.jpg";
 
     // Embed construction
     const Embed = new MessageEmbed()

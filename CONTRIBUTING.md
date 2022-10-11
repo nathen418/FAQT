@@ -1,10 +1,10 @@
-# BaseBot Contributing guidelines
+# FAQT Contributing guidelines
 
 ## Developing New Features
 
-First create a new branch with it's base set to the [staging](https://github.com/Antares-Network/BaseBot/tree/staging) branch.  
+First create a new branch with it's base set to the [staging](https://github.com/nathen418/FAQT/tree/staging) branch.  
 For naming conventions use `feature/GithubUsername/FeatureName`. Example: `feature/nathen418/mongodb-support`  
-Next when your feature is ready to be merged, submit a pull request to the [staging](https://github.com/Antares-Network/BaseBot/tree/staging) branch.  
+Next when your feature is ready to be merged, submit a pull request to the [staging](https://github.com/nathen418/FAQT/tree/staging) branch.  
 This will be used to test your changes along side the rest of the code and any other pending new features.
 
 ## Fixing Bugs

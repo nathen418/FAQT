@@ -16,8 +16,8 @@ export default {
     const color = "#0099ff";
     const title = "Bot/API Ping";
     const description = `Ping: 🏓 | Latency is: **${client.ws.ping}**ms.`;
-    const footer = `Delivered in: ${client.ws.ping}ms | BaseBot | ${process.env.VERSION}`;
-    const footerIcon = "https://antaresnetwork.com/resources/BaseBot/icon.jpg";
+    const footer = `Delivered in: ${client.ws.ping}ms | FAQT | ${process.env.VERSION}`;
+    const footerIcon = "https://antaresnetwork.com/resources/FAQT/icon.jpg";
 
     const Embed = new MessageEmbed()
       .setColor(color)

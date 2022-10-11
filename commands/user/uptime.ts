@@ -23,8 +23,8 @@ export default {
     const color = "#0099ff";
     const title = "Bot Uptime";
     const description = `I have been online for ${days}d ${hours}h ${minutes}m ${seconds}s`;
-    const footer = `Delivered in: ${client.ws.ping}ms | BaseBot | ${process.env.VERSION}`;
-    const footerIcon = "https://antaresnetwork.com/resources/BaseBot/icon.jpg";
+    const footer = `Delivered in: ${client.ws.ping}ms | FAQT | ${process.env.VERSION}`;
+    const footerIcon = "https://antaresnetwork.com/resources/FAQT/icon.jpg";
 
     // Embed construction
     const Embed = new MessageEmbed()

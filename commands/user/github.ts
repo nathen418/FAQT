@@ -15,12 +15,12 @@ export default {
     // Embed values
     const color = "#0099ff";
     const thumbnail =
-      "https://antaresnetwork.com/resources/BaseBot/base-server-icon.png";
+      "https://antaresnetwork.com/resources/FAQT/base-server-icon.png";
     const title = "Github";
     const description =
-      "Click here to go to the BaseBot repo: \n https://github.com/Antares-Network/BaseBot";
-    const footer = `Delivered in: ${client.ws.ping}ms | BaseBot | ${process.env.VERSION}`;
-    const footerIcon = "https://antaresnetwork.com/resources/BaseBot/icon.jpg";
+      "Click here to go to the FAQT repo: \n https://github.com/nathen418/FAQT";
+    const footer = `Delivered in: ${client.ws.ping}ms | FAQT | ${process.env.VERSION}`;
+    const footerIcon = "https://antaresnetwork.com/resources/FAQT/icon.jpg";
 
     // Embed construction
     const Embed = new MessageEmbed()

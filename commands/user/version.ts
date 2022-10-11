@@ -15,8 +15,8 @@ export default {
     const color = "#0099ff";
     const title = "Bot Version";
     const description = `I am running version: ${process.env.VERSION}`;
-    const footer = `Delivered in: ${client.ws.ping}ms | BaseBot | ${process.env.VERSION}`;
-    const footerIcon = "https://antaresnetwork.com/resources/BaseBot/icon.jpg";
+    const footer = `Delivered in: ${client.ws.ping}ms | FAQT | ${process.env.VERSION}`;
+    const footerIcon = "https://antaresnetwork.com/resources/FAQT/icon.jpg";
 
     // Embed construction
     const Embed = new MessageEmbed()

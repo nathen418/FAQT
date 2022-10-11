@@ -16,7 +16,7 @@ jobs:
       uses: machine-learning-apps/gpr-docker-publish@master
       id: docker
       with:
-        IMAGE_NAME: 'BaseBot'
+        IMAGE_NAME: 'FAQT'
         TAG: 'latest'
         DOCKERFILE_PATH: './Dockerfile'
       env:

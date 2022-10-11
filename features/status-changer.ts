@@ -8,7 +8,7 @@ export default (client: Client) => {
     `antaresnetwork.com/github`,
     `status.antaresnetwork.com`,
     `Antares Network Server Hosting`,
-    "Hello! I'm BaseBot",
+    "Hello! I'm FAQT",
   ];
   let counter = 0;
 

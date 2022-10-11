@@ -1,5 +1,5 @@
 {
-  "name": "basebot",
+  "name": "FAQT",
   "version": "1.0.0",
   "engines": {
     "node": "17.x"
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Antares-Network/BaseBot.git"
+    "url": "git+https://github.com/nathen418/FAQT.git"
   },
   "author": "nathen418",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Antares-Network/BaseBot/issues"
+    "url": "https://github.com/nathen418/FAQT/issues"
   },
-  "homepage": "https://github.com/Antares-Network/BaseBot#readme",
+  "homepage": "https://github.com/nathen418/FAQT#readme",
   "dependencies": {
     "axios": "^0.27.2",
     "chalk": "4.1.2",
