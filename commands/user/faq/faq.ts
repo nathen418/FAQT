@@ -1,35 +1,46 @@
-import chalk from "chalk";
 import { MessageEmbed } from "discord.js";
 import { ICommand } from "wokcommands";
+import chalk from "chalk";
+import faq from "../../../faq/faq.json";
 
 export default {
-  name: "status",
+  name: "faq",
   category: "user",
-  description: "Sends an embed with a link to the status page for the bot.",
+  description: "FAQ",
   slash: true,
   testOnly: false,
   guildOnly: true,
+  minArgs: 1,
+	maxArgs: 1,
+  expectedArgs: "<number>",
   requiredPermissions: ["SEND_MESSAGES"],
+  options: [
+		{
+			name: "FAQ Number",
+			description: "Any number 1-17",
+			required: true,
+			type: 4,
+		},
+	],
 
-  callback: async ({ client, interaction }) => {
+  callback: async ({ client, interaction, args }) => {
+
+    if(Number(args[0]) > 17 || Number(args[0]) < 1) return { content: "Please enter a number between 1 and 17", ephemeral: true };
+
     // Embed values
     const color = "#0099ff";
-    const thumbnail =
-      "https://antaresnetwork.com/resources/FAQT/base-server-icon.png";
-    const title = "Status Page";
-    const description =
-      "CLick here to see the bot's status: \nhttps://status.antaresnetwork.com";
+    const title = faq[Number(args[0])].title;
+    const description = faq[Number(args[0])].description;
     const footer = `Delivered in: ${client.ws.ping}ms | FAQT | ${process.env.VERSION}`;
     const footerIcon = "https://antaresnetwork.com/resources/FAQT/icon.jpg";
 
-    // Embed construction
     const Embed = new MessageEmbed()
       .setColor(color)
       .setTitle(title)
-      .setThumbnail(thumbnail)
       .setDescription(description)
       .setFooter({ text: footer, iconURL: footerIcon });
 
+    // Return the embed
     await interaction.reply({ embeds: [Embed] });
 
     // Log the command usage
@@ -37,7 +48,7 @@ export default {
       chalk.blue(
         `${chalk.green(`[COMMAND]`)} ${chalk.yellow(
           interaction.user.tag
-        )} used the ${chalk.green(`/status`)} command in ${chalk.yellow(
+        )} used the ${chalk.green(`/faq`)} command in ${chalk.yellow(
           interaction.guild?.name
         )}`
       )

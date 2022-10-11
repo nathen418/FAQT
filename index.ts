@@ -61,7 +61,7 @@ process.on("unhandledRejection", (promise, reason) => {
 });
 
 // Login to Discord with the bot token and display an error if it fails.
-client.login(process.env.MAIN_TOKEN).catch((error) => {
+client.login(process.env.BOT_TOKEN).catch((error) => {
   console.log(
     chalk.red.bold(`There was an error connecting to the Discord API`)
   );

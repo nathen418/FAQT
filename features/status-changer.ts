@@ -2,13 +2,10 @@ import { Client } from "discord.js";
 
 export default (client: Client) => {
   const statusOptions = [
-    `/help | Ping: ${client.ws.ping}ms`,
-    `V.${process.env.VERSION}`,
-    `status.antaresnetwork.com`,
-    `antaresnetwork.com/github`,
-    `status.antaresnetwork.com`,
-    `Antares Network Server Hosting`,
-    "Hello! I'm FAQT",
+    `/faq | Ping: ${client.ws.ping}ms`,
+    `/faq | V.${process.env.VERSION}`,
+    "/faq | Hello! I'm FAQT",
+    "/faq | nathen418.com"
   ];
   let counter = 0;
 
