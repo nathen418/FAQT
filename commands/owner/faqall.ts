@@ -4,9 +4,9 @@ import chalk from "chalk";
 import faq from "../../faq/faq.json";
 
 export default {
-	name: "faq",
+	name: "faqall",
 	category: "owner",
-	description: "FAQ",
+	description: "FAQ but all of them",
 	slash: true,
 	testOnly: false,
 	guildOnly: true,
