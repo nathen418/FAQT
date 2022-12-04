@@ -14,7 +14,7 @@ export default {
 	callback: async ({ client, interaction }) => {
 		// Embed values
 		const color = "#BC0057";
-		const title = "Changing Boo Bot's Prefix";
+		const title = "Changing Santa Bot's Prefix";
 		const description = "How to change the Bot prefix, you may ask?" + 
         "\nYou need to be a premium user." + 
         "\nJust use `+sbprefix <your prefix>` and it will change.";

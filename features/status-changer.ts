@@ -5,7 +5,10 @@ export default (client: Client) => {
     `/faq | Ping: ${client.ws.ping}ms`,
     `/faq | V.${process.env.VERSION}`,
     "/faq | Hello! I'm FAQT",
-    "/faq | nathen418.com"
+	"/faq | A FAQ bot",
+	"/faq | Made by nathen418#9915",
+    "/faq | nathen418.com",
+	"/faq | antaresnetwork.com"
   ];
   let counter = 0;
 

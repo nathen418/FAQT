@@ -10,6 +10,8 @@ export default {
 	testOnly: false,
 	guildOnly: true,
 	requiredPermissions: ["MANAGE_MESSAGES"],
+	ownerOnly: true,
+
 
 	callback: async ({ client, interaction }) => {
 		// Embed values
