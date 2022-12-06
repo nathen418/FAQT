@@ -44,7 +44,7 @@ client.on("ready", async () => {
     mongoUri: String(process.env.MONGODB_URI),
     disabledDefaultCommands: ["help", "language"],
     botOwners: [
-      "603629606154666024",
+      "603629606154666024", "306929840290791425"
     ],
   }).setDefaultPrefix(String(process.env.BOT_DEFAULT_PREFIX));
 
