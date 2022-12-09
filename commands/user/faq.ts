@@ -33,8 +33,8 @@ export default {
 
     // Embed values
     const color = "#0099ff";
-    const title = faq[Number(args[0])+1].title;
-    const description = faq[Number(args[0])+1].description;
+    const title = faq[Number(args[0])-1].title;
+    const description = faq[Number(args[0])-1].description;
     const footer = `Delivered in: ${client.ws.ping}ms | FAQT | ${process.env.VERSION}`;
     const footerIcon = `https://cdn.discordapp.com/avatars/${client.user?.id}/${client.user?.avatar}.jpeg`;
 
